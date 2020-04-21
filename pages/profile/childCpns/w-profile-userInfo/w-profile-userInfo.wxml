@@ -1,0 +1,14 @@
+<!--pages/profile/w-profile-userInfo/w-profile-userInfo.wxml-->
+<view class="user-info">
+  <image src="{{img}}"
+         class="img"></image>
+  <view class="login-info">
+    <view class="register">{{register}}</view>
+    <view>
+      <image class="phone"
+             src="/assets/images/profile/phone.png"></image>
+      <text class="phoneNum">{{phoneNum}}</text>
+    </view>
+  </view>
+  <image src="/assets/images/common/arrow-right.png" class="go"></image>
+</view>

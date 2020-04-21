@@ -1,0 +1,36 @@
+/* components/w-tabControl/w-tabControl.wxss */
+.container{
+  height: 100rpx;
+  background-color: #fff;
+}
+.tab-control{
+  display: flex;
+  text-align: center;
+  font-size: 34rpx;
+  font-weight: bold;
+  color: #555;
+  background-color: #fff;
+}
+.tabFixed{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+.tab-control-item{
+  flex: 1;
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 20rpx;
+}
+.content{
+  padding: 0 10rpx 16rpx;
+}
+.active{
+  color: #ff5777;
+}
+.active .content{
+  border-bottom: 6rpx solid #ff5777;
+  border-bottom-width: 10rpx;
+}

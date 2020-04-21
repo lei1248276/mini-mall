@@ -1,0 +1,20 @@
+<!--pages/category/category.wxml-->
+<!-- 1.展示分类页菜单栏-->
+<scroll-view scroll-y class="m-scroll">
+  <w-category-menu categories="{{categories}}" class="menu"
+                   bind:menuClick="handleMenuClick">
+  </w-category-menu>
+</scroll-view>
+<scroll-view scroll-y class="c-scroll">
+  <!-- 2.展示分类页菜单栏内容-->
+  <w-category-menuContent menuContent="{{categoryContent}}" class="menu-content"></w-category-menuContent>
+  <!-- 3.展示分类页tab-control -->
+  <w-tabControl id="tabControl" isFixed="{{isFixed}}"
+                list="{{titles}}" bind:tabClick="handleTabClick">
+  </w-tabControl>
+  <!-- 4..展示分类页商品-->
+  <w-goods goods="{{goods}}"></w-goods>
+</scroll-view>
+
+<!-- 回到顶部-->
+<w-backTop wx:if="{{isShow}}"></w-backTop>

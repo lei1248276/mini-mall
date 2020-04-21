@@ -1,0 +1,49 @@
+var formatTime = function (time) {
+  if (time) {
+    getDate(time)
+  } else {
+    return
+  }
+  var year = time.getFullYear(),
+      month = time.getMonth() + 1,
+      day = time.getDate(),
+      hour = time.getHours(),
+      minute = time.getMinutes(),
+      second = time.getSeconds();
+  return [year,month,day].map(formatNumber).join('-') + ' ' + [hour,minute,second].map(formatNumber).join(':');
+};
+
+var formatNumber = function(n) {
+  n = n.toString()
+  return n[1] ? n : '0' + n
+}
+
+var filter = {
+  sellCount: function (value) {
+    if (value < 10000) {
+      return value;
+    }
+    return (value / 10000).toFixed(1) + '万';
+  },
+  totalPrice: function (arr) {
+    return arr.filter(function(value) {
+      return value.checked;
+    }).reduce(function(pre, curren) {
+      return pre + curren.price * curren.count
+    },0).toFixed(2);
+  },
+  counter: function (arr) {
+    return arr.filter(function (value) {
+      return value.checked;
+    }).reduce(function (pre, current) {
+      return pre + current.count;
+    },0);
+  }
+}
+
+module.exports = {
+  formatTime: formatTime,
+  sellCount: filter.sellCount,
+  totalPrice: filter.totalPrice,
+  counter: filter.counter
+}

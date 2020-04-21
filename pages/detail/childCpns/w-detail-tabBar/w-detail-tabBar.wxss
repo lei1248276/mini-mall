@@ -1,0 +1,41 @@
+/* pages/detail/childCpns/w-detail-tabBar/w-detail-tabBar.wxss */
+.d-tabBar{
+  display: flex;
+  background-color: white;
+  color: #555;
+  font-size: 32rpx;
+  font-weight: bold;
+  text-align: center;
+  height: 116rpx;
+  line-height: 116rpx;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.d-tabBar .bar-item{
+  flex: 1;
+  display: flex;
+}
+.bar-item .img{
+  width: 50rpx;
+  height: 50rpx;
+  position: relative;
+  top: -10rpx;
+  left: 28rpx;
+}
+.bar-item .text{
+  position: relative;
+  top: 28rpx;
+  left: -28rpx;
+}
+.bar-item .left,.bar-item .right{
+  flex: 1;
+}
+.shop-cart{
+  background-color: yellow;
+}
+.buy{
+  background-color: #ff5777;
+}

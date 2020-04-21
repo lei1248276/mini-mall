@@ -1,0 +1,11 @@
+<!--components/w-goodsItem/w-goodsItem.wxml-->
+<view class="goods-item" bind:tap="currentItem">
+  <image src="{{item.show.img || item.image || item.img}}" class="img" mode="widthFix"></image>
+  <view class="goods-info">
+    <view class="title">{{item.title}}</view>
+    <text class="price">￥{{item.price}} </text>
+    <image src="{{collect ? '/assets/images/common/collection.png' : '/assets/images/common/favor.png'}}"
+           class="icon" catchtap="isCollect" lazy-load></image>
+    <text class="favor">{{item.cfav}}</text>
+  </view>
+</view>

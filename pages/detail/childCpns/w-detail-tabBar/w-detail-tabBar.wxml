@@ -1,0 +1,26 @@
+<!--pages/detail/childCpns/w-detail-tabBar/w-detail-tabBar.wxml-->
+<view class="d-tabBar">
+  <view class="bar-item">
+    <view class="left">
+      <image src="/assets/images/detail/service.png" class="img"></image>
+      <text class="text">客服</text>
+    </view>
+    <view class="left">
+      <image src="/assets/images/detail/shop.png" class="img"></image>
+      <text class="text">店铺</text>
+    </view>
+    <view class="left" bind:tap="isCollect">
+      <image src="{{collect ? '/assets/images/common/collection.png' : '/assets/images/detail/collect.png'}}"
+             class="img"></image>
+      <text class="text">收藏</text>
+    </view>
+  </view>
+  <view class="bar-item shop-cart">
+    <view class="right" bind:tap="handleAddCart">
+      <text>加入购物车</text>
+    </view>
+    <view class="right buy">
+      <text>购买</text>
+    </view>
+  </view>
+</view>

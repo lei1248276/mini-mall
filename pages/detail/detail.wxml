@@ -1,0 +1,27 @@
+<!--pages/detail/detail.wxml-->
+<scroll-view class="scroll" scroll-y>
+  <!-- 1.展示详情页轮播图-->
+  <w-swiper list="{{topImages}}" class="d-swiper"></w-swiper>
+  <!-- 2.展示详情页商品基础信息-->
+  <w-detail-baseInfo goods="{{goods}}"></w-detail-baseInfo>
+  <!-- 3.展示详情页tab-control-->
+  <w-tabControl list="{{titles}}" isFixed="{{isFixed}}"
+                id="tabControl" bind:tabClick="handleTabClick">
+  </w-tabControl>
+  <!-- 4.展示详情页商家信息-->
+  <w-detail-shopInfo shop="{{shop}}"></w-detail-shopInfo>
+  <!-- 5.展示详情页商品详情信息-->
+  <w-detail-goodsInfo wx:if="{{currentIndex === 0}}" goodsInfo="{{goodsInfo}}"></w-detail-goodsInfo>
+  <!-- 6.展示详情页商品参数信息-->
+  <w-detail-paramInfo wx:elif="{{currentIndex === 1}}" goodsParam="{{goodsParam}}"></w-detail-paramInfo>
+  <!-- 7.展示详情页商品评价信息-->
+  <w-detail-commentInfo wx:elif="{{currentIndex === 2}}" goodsComment="{{goodsComment}}"></w-detail-commentInfo>
+  <!-- 8.展示详情页推荐商品-->
+  <w-detail-recommend wx:elif="{{currentIndex === 3}}" goods="{{recommend}}"></w-detail-recommend>
+</scroll-view>
+
+<!-- 回到顶部-->
+<w-backTop wx:if="{{isShow}}" class="back-top"></w-backTop>
+<!-- 展示详情页tabBar-->
+<w-detail-tabBar bind:addCart="handleAddCart"></w-detail-tabBar>
+

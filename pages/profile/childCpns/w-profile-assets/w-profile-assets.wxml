@@ -1,0 +1,15 @@
+<!--pages/profile/childCpns/w-profile-assets/w-profile-assets.wxml-->
+<view class="user-assets">
+  <view class="account item">
+    <view class="number">{{account}}</view>
+    <view>我的余额</view>
+  </view>
+  <view class="coupon item">
+    <view class="number">{{coupon}}</view>
+    <view>我的优惠</view>
+  </view>
+  <view class="integral item">
+    <view class="number">{{integral}}</view>
+    <view>我的积分</view>
+  </view>
+</view>

@@ -1,0 +1,8 @@
+<!--pages/detail/childCpns/w-detail-nav/w-detail-nav.wxml-->
+<view class="nav">
+  <block wx:for="{{['商品','参数','评价','推荐']}}" wx:key="index">
+    <text class="nav-item {{currentIndex === index ? 'active' : ''}}"
+          data-index="{{index}}"
+          bind:tap="handleClick">{{item}}</text>
+  </block>
+</view>

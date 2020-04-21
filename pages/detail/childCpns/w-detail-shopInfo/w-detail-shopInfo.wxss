@@ -1,0 +1,89 @@
+/* pages/detail/childCpns/w-shopInfo/w-shopInfo.wxss */
+.shop-info{
+  padding: 50rpx 16rpx;
+  border-bottom: 10rpx solid #f2f5f8;
+}
+.shop-top .img{
+  width: 90rpx;
+  height: 90rpx;
+}
+.shop-top .name{
+  position: relative;
+  top: -30rpx;
+  left: 16rpx;
+}
+.shop-middle{
+  display: flex;
+  margin-top: 20rpx;
+  text-align: center;
+}
+.shop-middle .left,.shop-middle .right{
+  flex: 1;
+}
+.shop-middle .left{
+  display: flex;
+  text-align: center;
+  border-right: 4rpx solid rgba(0,0,0,.1);
+  padding-bottom: 10rpx;
+}
+.left .sell-info,.left .goods-info{
+  flex: 1;
+  padding: 20rpx 10rpx;
+}
+.sell-count,.goods-count{
+  font-size: 36rpx;
+}
+
+.sell-text,.goods-text{
+  font-size: 26rpx;
+}
+.right .goods-desc {
+  width: 240rpx;
+  padding-left: 60rpx;
+  text-align: left;
+  font-size: 30rpx;
+  display: flex;
+}
+.right .desc{
+  display: inline-block;
+  padding: 10rpx 0;
+}
+.right .score-name{
+  flex: 4;
+}
+.right .score {
+  color: #5ea732;
+  margin-left: 16rpx;
+  flex: 2;
+}
+.right .desc-info {
+  flex: 1;
+}
+
+.right .score-better {
+  color: #f13e3a;
+}
+
+.right .better .text {
+  background-color: #5ea732;
+  color: #fff;
+}
+
+.right .better-more .text {
+  background-color: #f13e3a;
+}
+
+.shop-bottom{
+  text-align: center;
+  margin-top: 20rpx;
+}
+.enter-shop{
+  font-size: 28rpx;
+  background-color: #f2f5f8;
+  border-radius: 20rpx;
+  width: 300rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  display: inline-block;
+}
+

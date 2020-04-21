@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "w-profile-userInfo": "./childCpns/w-profile-userInfo/w-profile-userInfo",
+    "w-profile-assets": "./childCpns/w-profile-assets/w-profile-assets",
+    "w-profile-fucList": "./childCpns/w-profile-fucList/w-profile-fucList"
+  },
+  "navigationBarTitleText": "个人"
+}

@@ -1,0 +1,32 @@
+/* pages/detail/childCpns/w-detail-paramInfo/w-detail-paramInfo.wxss */
+.param-info{
+  padding: 40rpx 20rpx 0;
+  font-size: 28rpx;
+  border-bottom: 10rpx solid #f2f5f8;
+  color: #555;
+}
+.goods-size {
+  border-bottom: 6rpx solid #f2f5f8;
+}
+.goods-size .size-info,.goods-paramInfo .param{
+  display: flex;
+  border-bottom: 2rpx solid rgba(100,100,100,.1);
+}
+.size-info .item-size{
+  flex: 1;
+  padding: 20rpx 10rpx;
+}
+.param .item-paramInfo{
+  padding: 20rpx 10rpx;
+}
+.param{
+  text-align: left;
+}
+.basis-key{
+  flex: 0.5;
+}
+.value-color{
+  color: #ff5777;
+  white-space: pre-wrap;
+  flex: 2;
+}

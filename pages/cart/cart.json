@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "w-checkIcon": "/components/w-checkIcon/w-checkIcon"
+  },
+  "navigationBarTitleText": "购物车"
+}

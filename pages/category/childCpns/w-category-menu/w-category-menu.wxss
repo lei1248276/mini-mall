@@ -1,0 +1,16 @@
+/* pages/category/childCpns/w-category-menu/w-category-menu.wxss */
+.category-menu{
+  width: 23%;
+  text-align: center;
+  color: #666;
+  background-color: #f6f6f6;
+}
+.category-menu .menu-item{
+  padding: 28rpx 10rpx;
+}
+.active{
+  color: #ff5777;
+  font-weight: bold;
+  border-left: 4rpx solid #ff5777;
+  background-color: #fff;
+}

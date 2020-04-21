@@ -1,0 +1,17 @@
+<!--pages/home/home.wxml-->
+<!-- 1.展示轮播图 -->
+<w-swiper list="{{banners}}"></w-swiper>
+<!-- 2.展示推荐信息-->
+<w-recommend list="{{recommends}}"></w-recommend>
+<!-- 3.展示本周流行-->
+<w-feature></w-feature>
+<!-- 4.展示tabControl-->
+<!-- 外层包裹一个空盒子，防止子元素脱离布局后页面改变-->
+<w-tabControl id="tabControl" list="{{titles}}"
+              bind:tabClick="handleTabClick"
+              isFixed="{{isTabFixed}}">
+</w-tabControl>
+<!-- 5.展示goods的商品数据-->
+<w-goods goods="{{goods[currentType].list}}"></w-goods>
+<!-- 6.回到顶部的功能-->
+<w-backTop wx:if="{{isShow}}"></w-backTop>

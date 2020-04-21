@@ -1,0 +1,32 @@
+/* pages/cart/childCpns/w-cart-bottomBar/w-cart-bottomBar.wxss */
+
+/* .bottom-bar{
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 36rpx;
+  color: #666;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  background-color: #eee;
+  box-shadow: 0 -4rpx 6rpx rgba(0, 0, 0, .2);
+}
+.bottom-bar .left{
+  display: flex;
+  flex: 1;
+}
+.left .checkout,.left .total-price{
+  flex: 1;
+}
+.bottom-bar .right{
+  flex: 1;
+}
+.right .buy-product{
+  float: right;
+  background-color: orangered;
+  padding: 0 40rpx;
+  color: white;
+} */
+

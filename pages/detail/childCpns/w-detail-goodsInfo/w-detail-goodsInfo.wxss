@@ -1,0 +1,51 @@
+/* pages/detail/childCpns/w-detail-goodsInfo/w-detail-goodsInfo.wxss */
+.goods-info{
+  padding: 30rpx 0;
+  border-bottom: 10rpx solid #f2f5f8;
+}
+.goods-info .desc-info{
+  padding: 0 30rpx;
+}
+.goods-info .desc{
+  padding: 30rpx 0;
+  font-size: 28rpx;
+  color: #555;
+}
+.goods-info .start,.goods-info .end{
+  width: 180rpx;
+  height: 2rpx;
+  background-color: #a3a3a5;
+  position: relative;
+}
+.goods-info .start{
+  float: left;
+}
+.goods-info .end{
+  float: right;
+}
+.start::before{
+  content: "";
+  width: 10rpx;
+  height: 10rpx;
+  background-color: #333;
+  position: absolute;
+  bottom: 0;
+}
+.end::after{
+  content: "";
+  width: 10rpx;
+  height: 10rpx;
+  background-color: #333;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.goods-info .info-key{
+  color: #333;
+  font-size: 30rpx;
+  margin: 20rpx 0 20rpx 30rpx;
+}
+.info-list .img{
+  width: 100%;
+  height: 100%;
+}

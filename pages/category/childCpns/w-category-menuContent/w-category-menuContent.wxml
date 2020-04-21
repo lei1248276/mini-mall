@@ -1,0 +1,9 @@
+<!--pages/category/childCpns/w-category-menuContent/w-category-menuContent.wxml-->
+<view class="menu-content">
+  <block wx:for="{{menuContent}}" wx:key="index">
+    <view class="content-item">
+      <image src="{{item.image}}" class="img" lazy-load></image>
+      <view>{{item.title}}</view>
+    </view>
+  </block>
+</view>

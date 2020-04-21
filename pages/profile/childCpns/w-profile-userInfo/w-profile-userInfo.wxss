@@ -1,0 +1,36 @@
+/* pages/profile/w-profile-userInfo/w-profile-userInfo.wxss */
+.user-info{
+  background-color: #ff8198;
+  overflow: hidden;
+  color: #fff;
+}
+.user-info .img{
+  width: 120rpx;
+  height: 120rpx;
+  background-color: #eee;
+  border-radius: 50%;
+  float: left;
+  margin: 10rpx 20rpx;
+}
+.user-info .login-info{
+  float: left;
+}
+.login-info .register{
+  margin-top: 16rpx;
+}
+.login-info .phone{
+  width: 70rpx;
+  height: 65rpx;
+  margin-left: -15rpx;
+}
+.login-info .phoneNum{
+  position: relative;
+  bottom: 24rpx;
+  left: 0;
+}
+.user-info .go{
+  width: 70rpx;
+  height: 70rpx;
+  float: right;
+  padding: 30rpx;
+}

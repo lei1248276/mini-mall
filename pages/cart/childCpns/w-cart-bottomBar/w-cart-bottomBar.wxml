@@ -1,0 +1,13 @@
+<!--pages/cart/childCpns/w-cart-bottomBar/w-cart-bottomBar.wxml-->
+<view class="bottom-bar">
+  <view class="left">
+    <view class="checkout" bind:tap="handleCheckAll">
+      <w-checkIcon isChecked="{{isSelect}}"></w-checkIcon>
+      <text>全选</text>
+    </view>
+    <text class="total-price">合计:￥{{price}}</text>
+  </view>
+  <view class="right">
+    <text class="buy-product">结算({{product}})</text>
+  </view>
+</view>

@@ -1,0 +1,6 @@
+<!--pages/cart/childCpns/w-cart-list/w-cart-list.wxml-->
+<view class="cart-list">
+  <block wx:for="{{cartList}}" wx:key="index">
+    <w-cart-listItem listItem="{{item}}"></w-cart-listItem>
+  </block>
+</view>

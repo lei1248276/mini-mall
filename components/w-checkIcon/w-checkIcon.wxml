@@ -1,0 +1,6 @@
+<!--components/w-checkIcon/w-checkIcon.wxml-->
+<icon type="success"
+      color="{{isChecked ? '#ff5777' : '#fff'}}"
+      size="24"
+      class="icon">
+</icon>

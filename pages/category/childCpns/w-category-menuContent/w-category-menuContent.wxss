@@ -1,0 +1,17 @@
+/* pages/category/childCpns/w-category-menuContent/w-category-menuContent.wxss */
+.menu-content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  color: #666;
+}
+.menu-content .content-item{
+  display: inline-block;
+  width: 26%;
+  padding: 15rpx;
+}
+.content-item .img{
+  width: 144rpx;
+  height: 144rpx;
+}

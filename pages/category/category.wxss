@@ -1,0 +1,16 @@
+/* pages/category/category.wxss */
+.m-scroll{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+.c-scroll{
+  position: absolute;
+  top: 0;
+  left: 23%;
+  right: 0;
+  width: 77%;
+}
+
+

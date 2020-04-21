@@ -1,0 +1,18 @@
+<!--pages/cart/childCpns/w-cart-listItem/w-cart-listItem.wxml-->
+<view class="cart-list-item">
+  <view class="cart-itemImg">
+    <w-checkIcon isChecked="{{listItem.checked}}"
+                 class="check-button"
+                 bind:tap="handleButton">
+    </w-checkIcon>
+    <image src="{{listItem.image}}"
+           class="img" mode="widthFix">
+    </image>
+  </view>
+  <view class="cart-itemInfo">
+    <view class="item-title">{{listItem.title}}</view>
+    <view class="item-desc">{{listItem.desc}}</view>
+    <text class="item-price">{{listItem.price}}</text>
+    <text class="item-count">x{{listItem.count}}</text>
+  </view>
+</view>

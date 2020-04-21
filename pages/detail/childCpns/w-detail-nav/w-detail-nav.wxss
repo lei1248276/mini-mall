@@ -1,0 +1,13 @@
+/* pages/detail/childCpns/w-detail-nav/w-detail-nav.wxss */
+.nav{
+  display: flex;
+  text-align: center;
+  background-color: #fff;
+}
+.nav .nav-item{
+  flex: 1;
+  padding: 20rpx;
+}
+.nav .active{
+  color: #ff5777;
+}

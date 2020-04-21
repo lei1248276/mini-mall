@@ -1,0 +1,18 @@
+/* pages/profile/childCpns/w-profile-assets/w-profile-assets.wxss */
+.user-assets{
+  display: flex;
+  text-align: center;
+  height: 150rpx;
+  box-shadow: 0 20rpx rgba(100,100,100,.2);
+  color: #666;
+}
+.user-assets .item{
+  flex: 1;
+  border-right: 2rpx solid rgba(100,100,100,.2);
+}
+.user-assets .number{
+  padding: 20rpx 0 10rpx;
+  font-weight: bold;
+  font-size: 24px;
+  color: #ff5f3e;
+}

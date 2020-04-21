@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "w-category-menu": "./childCpns/w-category-menu/w-category-menu",
+    "w-category-menuContent": "./childCpns/w-category-menuContent/w-category-menuContent",
+    "w-tabControl": "/components/w-tabControl/w-tabControl",
+    "w-goods": "/components/w-goods/w-goods",
+    "w-backTop": "/components/w-backTop/w-backTop"
+  },
+  "navigationBarTitleText": "商品分类"
+}

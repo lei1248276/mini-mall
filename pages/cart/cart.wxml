@@ -1,0 +1,43 @@
+<!--pages/cart/cart.wxml-->
+<wxs module="filter" src="../../utils/util.wxs"></wxs>
+
+<scroll-view scroll-y class="scroll">
+  <!-- 展示购物车列表-->
+  <view class="cart-list">
+    <block wx:for="{{cartList}}" wx:key="index">
+      <view class="cart-list-item">
+        <view class="cart-itemImg">
+          <w-checkIcon isChecked="{{item.checked}}"
+                       class="check-button"
+                       bind:tap="handleButton"
+                       data-index="{{index}}">
+          </w-checkIcon>
+          <image src="{{item.image}}"
+                 class="img" mode="widthFix">
+          </image>
+        </view>
+        <view class="cart-itemInfo">
+          <view class="item-title">{{item.title}}</view>
+          <view class="item-desc">{{item.desc}}</view>
+          <text class="item-price">￥{{item.price}}</text>
+          <text class="item-count">x{{item.count}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
+
+
+  <!-- 展示底部统计数据bar-->
+  <view class="bottom-bar">
+    <view class="left">
+      <view class="checkout" bind:tap="handleCheckAll">
+        <w-checkIcon isChecked="{{isChecked}}"></w-checkIcon>
+        <text>全选</text>
+      </view>
+      <text class="total-price">合计:￥{{filter.totalPrice(cartList)}}</text>
+    </view>
+    <view class="right">
+      <text class="buy-product">结算({{filter.counter(cartList)}})</text>
+    </view>
+  </view>
+</scroll-view>

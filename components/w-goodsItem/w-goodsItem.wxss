@@ -1,0 +1,34 @@
+/* components/w-goodsItem/w-goodsItem.wxss */
+:host{
+  position: relative;
+  width: 48%;
+}
+.goods-item{
+  margin-bottom: 80rpx;
+  padding: 6rpx;
+  font-size: 26rpx;
+}
+.goods-item .img{
+  width: 100%;
+  border-radius: 10rpx;
+}
+.goods-info{
+  position: absolute;
+  bottom: 15rpx;
+  left: 2rpx;
+  right: 0;
+}
+.goods-info .title{
+  color: #555;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.goods-info .icon{
+  width: 40rpx;
+  height: 38rpx;
+  vertical-align: bottom;
+}
+.goods-info .price{
+  color: #ff5777;
+}

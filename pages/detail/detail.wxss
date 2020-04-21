@@ -1,0 +1,10 @@
+/* pages/detail/detail.wxss */
+/* 利用css的权重改变当前页面swiper图片高度*/
+swiper.d-swiper {
+  height: 650rpx;
+}
+.scroll{
+  margin-bottom: 116rpx;
+}
+
+

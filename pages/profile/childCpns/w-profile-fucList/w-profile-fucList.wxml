@@ -1,0 +1,7 @@
+<!--pages/profile/childCpns/w-profile-fucList/w-profile-fucList.wxml-->
+<view class="fuc-list">
+  <view class="fuc-item" wx:for="{{list}}" wx:key="index">
+    <image src="{{item.image}}" class="img"></image>
+    <view class="info">{{item.info}}</view>
+  </view>
+</view>

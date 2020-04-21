@@ -1,0 +1,9 @@
+<!--pages/profile/profile.wxml-->
+<!-- 1.展示用户信息栏-->
+<w-profile-userInfo></w-profile-userInfo>
+<!-- 2.展示用户资产-->
+<w-profile-assets></w-profile-assets>
+<!-- 3.展示功能列表-->
+<w-profile-fucList list="{{orderList}}"></w-profile-fucList>
+<w-profile-fucList list="{{serviceList}}"></w-profile-fucList>
+<w-profile-fucList list="{{moreList}}"></w-profile-fucList>
