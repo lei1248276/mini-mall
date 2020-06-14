@@ -1,9 +1,5 @@
 var formatTime = function (time) {
-  if (time) {
-    getDate(time)
-  } else {
-    return
-  }
+  time = getDate(time);
   var year = time.getFullYear(),
       month = time.getMonth() + 1,
       day = time.getDate(),

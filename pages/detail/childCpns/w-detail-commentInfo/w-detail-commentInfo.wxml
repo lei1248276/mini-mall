@@ -6,11 +6,11 @@
     <text>用户评价</text>
     <text class="more">更多</text>
   </view>
-  <view class="comment-user">
+  <view class="comment-user" wx:if="{{isShow}}">
     <image src="{{goodsComment[0].user.avatar}}" class="img" mode="widthFix"></image>
     <text class="uname">{{goodsComment[0].user.uname}}</text>
   </view>
-  <view class="comment-userInfo">
+  <view class="comment-userInfo" wx:if="{{isShow}}">
     <text class="comment-content">{{goodsComment[0].content}}</text>
     <view class="other-info">
       <text class="date">{{format.formatTime(goodsComment[0].created * 1000)}}</text>
@@ -23,5 +23,8 @@
                data-index="{{index}}"></image>
       </block>
     </view>
+  </view>
+  <view wx:else class="void">
+    暂无评价
   </view>
 </view>

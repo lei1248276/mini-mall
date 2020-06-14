@@ -2,6 +2,5 @@
   "name": "mall",
   "version": "1.0.0",
   "dependencies": {
-    "miniprogram-computed": "^2.1.1"
   }
 }

@@ -99,7 +99,7 @@ Page({
         .boundingClientRect(rect => {
           // console.log(rect);
           const position = rect.top;
-          const flag = position <= 5;
+          const flag = position <= 0;
           const isTabFixed = this.data.isTabFixed;
           if (flag !== isTabFixed) {
             this.setData({

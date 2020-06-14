@@ -14,7 +14,16 @@ Component({
    * 组件的初始数据
    */
   data: {
+    isShow: false
+  },
 
+  lifetimes: {
+    ready() {
+      const isShow = Object.keys(this.properties.goodsComment).length > 0;
+      this.setData({
+        isShow: isShow
+      })
+    }
   },
 
   /**

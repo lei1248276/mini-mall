@@ -5,6 +5,7 @@ import {
   getCategoryGoods
 } from "../../service/category";
 import {TYPE,BACK_TOP} from "../../common/const";
+import {throttle} from "../../utils/tool"
 
 Page({
 

@@ -100,7 +100,7 @@ Page({
 
     wx.createSelectorQuery().select('#tabControl').boundingClientRect(rect => {
       const top = rect.top;
-      const flag = top <= 5;
+      const flag = top <= 0;
       if (flag !== this.data.isFixed) {
         this.setData({
           isFixed: flag
