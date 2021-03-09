@@ -1,6 +1,5 @@
 <!--components/w-swiper/w-swiper.wxml-->
-<swiper class="swiper ~d-swiper"
-        circular autoplay
+<swiper class="swiper ~d-swiper" circular autoplay
         interval="2500" duration="300"
         indicator-dots indicator-active-color="#ff5777">
   <block wx:for="{{list}}" wx:key="index">
